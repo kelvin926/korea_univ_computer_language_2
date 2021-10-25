@@ -13,5 +13,4 @@ int main(){
     if(singer == elvis)
         cout << "맞았습니다.";
     else
-        cout << "틀렸습니다" + elvis + "입니다." << endl;
-}
+        cout << "틀렸습니다" + elvis + "입니다." << endl;}
