@@ -18,7 +18,7 @@ int main() {
     Circle circles[2][3]; //클래스 내 배열 생성
 
     circles[0][0].setRadius(1); // r = 1
-    circles[0][1].setRadius(2); // r = 2
+    circles[0][1].setRadius(2); // r = 2 등등
     circles[0][2].setRadius(3);
     circles[1][0].setRadius(4);
     circles[1][1].setRadius(5);
