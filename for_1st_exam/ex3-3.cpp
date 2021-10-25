@@ -24,11 +24,11 @@ double Circle::getArea() { //Circle 클래스의 멤버함수 getArea() 구현 (
 }
 
 int main() {
-    Circle donut;
+    Circle donut; //매개변수 없는 생성자 호출
     double area = donut.getArea();
     cout << "donut 면적은 " << area << endl;
 
-    Circle pizza(30);
+    Circle pizza(30); //매개변수 있는 생성자 호출
     area = pizza.getArea();
     cout << "pizza 면적은 " << area << endl;
 }
