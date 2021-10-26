@@ -4,13 +4,13 @@ using namespace std;
 class Circle {
     int radius;
 public:
-    Circle();
-    ~Circle() { }
+    Circle(); // 기본 생성자
+    ~Circle() { } // 소멸자
     void setRadius(int r) { radius = r; }
     double getArea() { return 3.14 * radius * radius; }
 };
 
-Circle::Circle() {
+Circle::Circle() { // 기본 생성자
     radius = 1;
 }
 
@@ -19,14 +19,16 @@ int main() {
     int n, radius;
     cin >> n;
     if(n <= 0) return 0;
-    Circle *pArray = new Circle [n];
+
+    Circle *pArray = new Circle [n]; //배열 동적 메모리 할당
     for(int i = 0; i < n; i++) {
         cout << "원" << i+1 << ": ";
         cin >> radius;
-        pArray[i].setRadius(radius);
+        pArray[i].setRadius(radius); //객체 동적 메모리 배열에 반지름 대입
     }
+
     int count = 0;
-    Circle* p = pArray;
+    Circle* p = pArray; //pArray를 가르키는 포인터 변수 p 선언
     for(int i = 0; i < n; i++) {
         cout << p->getArea() << ' ';
         if(p->getArea() >= 100 && p->getArea() <= 200)
