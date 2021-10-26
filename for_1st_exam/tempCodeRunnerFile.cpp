@@ -1,2 +1,2 @@
 
-    int *p = new int[n];
+        if(latter < names[i]) {
