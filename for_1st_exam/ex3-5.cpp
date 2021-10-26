@@ -6,7 +6,9 @@ class Point {
 public:
     Point();
     Point(int a, int b);
-    void show() { cout << "(" << x << "," << y << ")" << endl; }
+    void show() { 
+        cout << "(" << x << "," << y << ")" << endl; 
+    }
 };
 Point::Point() : Point(0,0) { } //위임 생성자 (매개변수 없을 때 입력) C++11이후만 가능함. (-std=c++11 옵션 사용 컴파일 할 것.)
 

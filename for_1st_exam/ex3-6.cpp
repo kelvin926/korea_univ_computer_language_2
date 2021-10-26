@@ -35,4 +35,4 @@ int main() {
     if(rect1.isSquare()) cout << "rect1은 정사각형이다" << endl;
     if(rect2.isSquare()) cout << "rect2는 정사각형이다" << endl;
     if(rect3.isSquare()) cout << "rect3는 정사각형이다" << endl;
-}
+} 
