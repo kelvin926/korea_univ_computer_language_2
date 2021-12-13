@@ -12,7 +12,7 @@ int main() {
 
     string latter = names[0];
     for(int i=1; i<5; i++) {
-        if(latter < names[i]) { //사전(알파벳  ) 순으로 가장 뒤에 나오는 문자열을 정함.
+        if(latter < names[i]) { //사전(알파벳) 순으로 가장 뒤에 나오는 문자열을 정함.
             latter = names[i];
         }
     }
